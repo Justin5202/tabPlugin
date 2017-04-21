@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置CSS*/
+* {
+  outline: 0;
+  box-sizing: border-box;
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+dl,
+dt,
+dd,
+input,
+img,
+span,
+i,
+b,
+strong {
+  margin: 0;
+  padding: 0;
+}
+img,
+input,
+textarea,
+a {
+  border: none;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+textarea {
+  resize: none;
+}
+body {
+  font-family: Arial, "微软雅黑";
+  font-size: 12px;
+}
+/*------公共css样式------------*/
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.fl {
+  float: left;
+  _display: inline;
+}
+.fr {
+  float: right;
+  _display: inline;
+}
+body {
+  padding: 100px;
+  background-color: #323232;
+}
+.tab-view {
+  float: left;
+  margin-right: 6%;
+}
+.tab-view p {
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 0;
+}
+.tab {
+  width: 300px;
+}
+.tab .tab-nav {
+  height: 30px;
+}
+.tab .tab-nav li {
+  float: left;
+  margin-right: 5px;
+  background-color: #767676;
+  border-radius: 3px 3px 0 0;
+}
+.tab .tab-nav li a {
+  display: block;
+  color: #fff;
+  line-height: 30px;
+  padding: 0 20px;
+}
+.tab .tab-nav .active {
+  background-color: #fff;
+}
+.tab .tab-nav .active a {
+  color: #767676;
+}
+.tab .content-wrap {
+  background-color: #fff;
+  height: 200px;
+  padding: 5px;
+}
+.tab .content-wrap .content-item {
+  display: none;
+}
+.tab .content-wrap .content-item img {
+  display: block;
+  width: 290px;
+  height: 190px;
+}
+.tab .content-wrap .current {
+  display: block;
+}

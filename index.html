@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>tab切换</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="tab-view">
+		<p>click事件，默认效果，第一张显示，3s自动播放</p>
+		<div class="js-tab tab" data-config='{
+										"triggleType": "click",
+										"effect": "default", 
+										"invoke": 1, 
+										"auto": 3000 
+										}'>
+			<ul class="tab-nav clearfix">
+				<li class="active"><a href="#">新闻</a></li>
+				<li><a href="#">娱乐</a></li>
+				<li><a href="#">电影</a></li>
+				<li><a href="#">科技</a></li>
+			</ul>
+			<div class="content-wrap">
+				<div class="content-item current">
+					<img src="img/timg.jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (1).jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (2).jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (3).jpg">
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="tab-view">
+		<p>mouseover事件，fade效果，第一张显示，3s自动播放</p>
+		<div class="js-tab tab" data-config='{
+										"triggleType": "mouseover",
+										"effect": "fade", 
+										"invoke": 1, 
+										"auto": 3000 
+										}'>
+			<ul class="tab-nav clearfix">
+				<li class="active"><a href="#">新闻</a></li>
+				<li><a href="#">娱乐</a></li>
+				<li><a href="#">电影</a></li>
+				<li><a href="#">科技</a></li>
+			</ul>
+			<div class="content-wrap">
+				<div class="content-item current">
+					<img src="img/timg.jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (1).jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (2).jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (3).jpg">
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="tab-view">
+		<p>第2张显示，不自动播放</p>
+		<div class="js-tab tab" data-config='{
+										"triggleType": "click",
+										"effect": "default", 
+										"invoke": 2, 
+										"auto": false 
+										}'>
+			<ul class="tab-nav clearfix">
+				<li class="active"><a href="#">新闻</a></li>
+				<li><a href="#">娱乐</a></li>
+				<li><a href="#">电影</a></li>
+				<li><a href="#">科技</a></li>
+			</ul>
+			<div class="content-wrap">
+				<div class="content-item current">
+					<img src="img/timg.jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (1).jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (2).jpg">
+				</div>
+				<div class="content-item">
+					<img src="img/timg (3).jpg">
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script>
+		$(function(){
+			// Tab.init($('.js-tab'));
+			$(".js-tab").tab();
+		})
+	</script>
+</body>
+</html>
