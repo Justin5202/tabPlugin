@@ -1,5 +1,5 @@
 # tabPlugin
-demo()
+[demo](https://justin5202.github.io/tabPlugin/)
 > 运用jQuery开发的一款tab切换插件，并封装成jq的方法，可直接调用。
 ### 定义一个Tab构造函数
  
